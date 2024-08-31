@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tw-ring-color: rgba(0, 162, 255, 0.2);
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.logo{
+  @apply lg:max-w-[150px] max-w-[90px]
+}
+.body{
+  @apply text-balance text-gray-800 bg-white font-medium
+}
+a{
+  @apply hover:text-blue-500 transition-all
+}
+a.active {
+  @apply hover:opacity-20 cursor-not-allowed gradient-text;
+}
+header{
+  box-shadow: 0px 4px 70px 0px rgba(30, 40, 52, 0.08);
+}
+.btn{
+  @apply px-3 py-2 flex items-center rounded-lg border border-gray-200 text-black border-solid transition-all hover:bg-white hover:border-black
+}
+.font-geforce{
+  font-family: "GeForce-bold";
+}
+
+.item-blog img{
+  @apply w-full md:max-w-[300px]  md:h-[200px] object-cover rounded-xl
+}
+.item-blog{
+  @apply py-6 px-5 max-md:flex-col hover:border-black border-solid border bg-white cursor-pointer justify-between  transition-all rounded-lg hover:translate-y-0.5 active:translate-y-1 flex items-start gap-5
+}
+.item-blog .content span{
+  @apply text-gray-500 text-sm
+}
+.item-blog .content p{
+  @apply text-lg font-light max-md:hidden
+}
+.item-blog .content h2{
+  @apply text-2xl font-semibold text-gray-800
+}
+.item-blog .content{
+  @apply flex flex-col gap-8
+}
+
+input:focus, input:focus-visible{
+  @apply outline-none
+}
+h1.gradient-text{
+  max-width: 970px;
+}
+input{
+  border: none;
+  background-color: transparent;
+  
+}
+.gradient-text{
+  background: var(--Hot-Graient, linear-gradient(97deg, #C41740 4.8%, #EA9C28 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
